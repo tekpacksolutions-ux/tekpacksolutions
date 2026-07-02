@@ -15,5 +15,7 @@ export const SOLUTIONS_QUERY = defineQuery(`
 `)
 
 export async function getSolutions() {
-  return await client.fetch(SOLUTIONS_QUERY)
+  return await client.fetch(SOLUTIONS_QUERY,{},{
+    next: { tags: ['solutions'] },
+  })
 }

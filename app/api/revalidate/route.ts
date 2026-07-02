@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
 
   const { _type } = JSON.parse(body)
 
-  if (_type === 'machines' || _type === 'solutions') {
+  if (_type === 'machines' || _type === 'solutions'  || _type === 'categories' || _type === 'industries') {
     revalidateTag(_type, '')
   }
 

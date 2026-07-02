@@ -13,5 +13,7 @@ export const CATEGORY_QUERY = defineQuery(`
 `)
 
 export async function getCategories() {
-  return await client.fetch(CATEGORY_QUERY)
+  return await client.fetch(CATEGORY_QUERY,{},{
+    next: { tags: ['categories'] },
+  })
 }

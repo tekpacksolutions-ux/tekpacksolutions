@@ -15,5 +15,7 @@ export const INDUSTRIES_QUERY = defineQuery(`
 `)
 
 export async function getIndustries() {
-  return await client.fetch(INDUSTRIES_QUERY)
+  return await client.fetch(INDUSTRIES_QUERY,{},{
+    next: { tags: ['industries'] },
+  })
 }

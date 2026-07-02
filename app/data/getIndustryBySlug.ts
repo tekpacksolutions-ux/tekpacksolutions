@@ -27,5 +27,7 @@ export const INDUSTRY_BY_SLUG_QUERY = defineQuery(`
 `)
 
 export async function getIndustryBySlug(slug: string) {
-  return await client.fetch(INDUSTRY_BY_SLUG_QUERY, { slug })
+  return await client.fetch(INDUSTRY_BY_SLUG_QUERY, { slug },{
+    next: { tags: ['industries'] },
+  })
 }
