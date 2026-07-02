@@ -5,7 +5,6 @@ import { companies } from '@/app/data/getCompanyData'
 import Image from 'next/image'
 
 export default function TrustSection() {
-  const data = companies
 
   return (
     <section

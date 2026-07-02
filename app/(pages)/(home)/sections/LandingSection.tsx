@@ -3,9 +3,7 @@ import BackgroundVideoSection from '@/app/sections/BackgroundVideoSection'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
-interface LandingSectionProps {}
-
-export default function LandingSection({}: LandingSectionProps) {
+export default function LandingSection() {
   return (
     <section className={'relative w-full overflow-hidden rounded-md'}>
       <BackgroundVideoSection src={'/video/background.mp4'} />

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import localFont from 'next/font/local'
-import { Geist, Inter } from 'next/font/google'
+import { Geist } from 'next/font/google'
 
 const geist = Geist({
   weight: ['200', '300', '400', '500', '600', '700'],

@@ -9,8 +9,6 @@ import MachineSection from '@/app/(pages)/(home)/sections/MachineSection'
 import ContactSection from '@/app/(pages)/(home)/sections/ContactSection'
 import { Metadata } from 'next'
 
-interface HomePageProps {}
-
 export const metadata: Metadata = {
   title: 'Automatic Filling & Packing Machines Manufacturer | TEKPACK',
   description:
@@ -24,7 +22,7 @@ export const metadata: Metadata = {
   ],
 }
 
-export default function HomePage({}: HomePageProps) {
+export default function HomePage() {
   return (
     <PageLayout>
       <LandingSection />

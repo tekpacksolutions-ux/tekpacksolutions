@@ -67,7 +67,6 @@ export default async function IndustryPage({ params }: PageProps) {
           <SectionDescription>{industryDescription}</SectionDescription>
         </div>
       </PageHeaderSection>
-      // Change this section inside your page grid:
       <main id='main-content' className='w-full'>
         {machinesList.length > 0 && (
           <ul className={'grid w-full grid-cols-1 gap-5 py-5 sm:grid-cols-3'}>

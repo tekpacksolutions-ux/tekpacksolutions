@@ -8,8 +8,6 @@ import { getMachines } from '@/app/data/getMachines'
 import MachineCard from '@/components/MachineCard'
 import { Metadata } from 'next'
 
-interface MachineProps {}
-
 export const metadata: Metadata = {
   title: 'Automatic Packaging Machinery & Industrial Filling Lines | TEKPACK',
   description:
@@ -23,7 +21,7 @@ export const metadata: Metadata = {
   ],
 }
 
-export default async function MachinePage({}: MachineProps) {
+export default async function MachinePage() {
   const rawData: MACHINES_QUERY_RESULT = await getMachines()
 
   // Safe execution guard to defend against null database records during deployment builds

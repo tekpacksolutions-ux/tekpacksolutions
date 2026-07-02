@@ -16,7 +16,7 @@ export default function ContactSection() {
           </h2>
           <div>
             <SectionDescription>
-              Don't let manual inefficiencies or faulty seals bottleneck your factory floor output. Connect directly
+              Dont let manual inefficiencies or faulty seals bottleneck your factory floor output. Connect directly
               with our Salem-based application engineers to map out your layout footprint, material densities, and
               target operational speeds. Whether you need a standalone servo-driven auger system or a fully integrated
               turnkey automatic packing machine line, TEKPACK delivers standard-setting hardware engineered to scale.

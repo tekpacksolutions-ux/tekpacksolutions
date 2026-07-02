@@ -40,9 +40,8 @@ const metrics: Metric[] = [
   },
 ]
 
-interface MetricCardProps extends Metric {}
 
-function MetricCard({ title, description }: MetricCardProps) {
+function MetricCard({ title, description }: Metric) {
   return (
     <li className='bg-background relative flex min-h-40 flex-col justify-between rounded-md p-5'>
       <p className='text-foreground font-clash text-6xl font-semibold sm:text-7xl'>{title}</p>

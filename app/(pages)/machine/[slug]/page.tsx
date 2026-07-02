@@ -102,7 +102,6 @@ export default async function MachinePage({ params }: MachinePageProps) {
             </div>
           </div>
         </section>
-
         {/* SECTION 2: Explorer Matrix (Right, Spanning 4 Columns) */}
         <aside className='flex flex-col gap-8 lg:col-span-4'>
           {/* Solutions */}
@@ -126,18 +125,6 @@ export default async function MachinePage({ params }: MachinePageProps) {
               <div className='flex flex-col gap-4'>
                 {relatedCategories.map((cat: any) => (
                   <SolutionCard key={cat._id} {...cat} slug={`/category/${cat.slug}`} />
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Industries */}
-          {relatedIndustries.length > 0 && (
-            <div className='flex flex-col gap-4'>
-              <h3 className='font-clash text-base font-bold tracking-wider text-cyan-500 uppercase'>Industries</h3>
-              <div className='flex flex-col gap-4'>
-                {relatedIndustries.map((ind: any) => (
-                  <SolutionCard key={ind._id} {...ind} slug={`/industry/${ind.slug}`} />
                 ))}
               </div>
             </div>
