@@ -9,7 +9,7 @@ interface PageHeaderSectionProps {
 
 export default function PageHeaderSection({ children, className }: PageHeaderSectionProps) {
   return (
-    <section className={cn('relative  sm:min-h-[50vh] w-full overflow-hidden rounded-md p-2 sm:p-5', className)}>
+    <section className={cn('relative  sm:min-h-[40vh] w-full overflow-hidden rounded-md p-2 sm:p-5', className)}>
       <div className={'relative z-10 h-full w-full'}>{children}</div>
       <div className={'absolute top-0 right-0 h-full w-full'}>
         <Image src={'/image/background.webp'} alt={'bg'} fill priority className={'object-cover'} />

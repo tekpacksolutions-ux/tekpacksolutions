@@ -28,16 +28,14 @@ export default async function ApplicationPage() {
   return (
     <PageLayout className={'relative gap-2 p-5'}>
       <PageHeaderSection>
-        <div className={'flex h-full max-w-5xl flex-col items-start justify-center gap-2 p-5 sm:p-20'}>
+        <div className={'flex h-full max-w-6xl flex-col items-start justify-center gap-2 p-5 sm:p-10'}>
           <h1 className={'font-clash text-foreground text-2xl font-semibold uppercase sm:text-5xl'}>
             Industrial Packaging Solutions & Processing Systems by Material Application
           </h1>
           <SectionDescription>
             With deep technical engineering competence, we advise on selecting targeted packaging configurations
             engineered specifically for your target market—ranging from flexible pouch lines to shelf-ready display
-            cartoning systems. Whether managing fine powders, non-free-flowing grains, abrasive granules, highly viscous
-            paste, or free-flowing liquids, TEKPACK delivers the specialized mechanical material-handling know-how your
-            facility demands.
+            cartoning systems.
           </SectionDescription>
         </div>
       </PageHeaderSection>

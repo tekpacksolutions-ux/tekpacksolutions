@@ -29,8 +29,8 @@ export default async function CategoryPage() {
   return (
     <PageLayout className={'relative gap-2 p-5'}>
       <PageHeaderSection>
-        <div className={'flex h-full max-w-4xl flex-col items-start justify-center gap-2 p-5 sm:p-20'}>
-          <h1 className={'font-clash text-2xl font-semibold sm:text-6xl'}>
+        <div className={'flex h-full max-w-5xl flex-col items-start justify-center gap-2 p-5 sm:p-10'}>
+          <h1 className={'font-clash text-2xl font-semibold sm:text-5xl uppercase'}>
             Automatic Packaging Machinery & Filling Systems by Category
           </h1>
           <SectionDescription>

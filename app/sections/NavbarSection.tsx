@@ -24,7 +24,7 @@ function LogoSection() {
   return (
     <div className='bg-background flex h-full w-full items-center justify-center'>
       <div className='relative h-full w-32 md:w-40'>
-        <Image src='/image/FullLogo.png' alt='TEKPACK Logo' fill priority className='object-contain' />
+        <Image src='/image/FullLogo.jpg' alt='TEKPACK Logo' fill priority className='object-contain' />
       </div>
     </div>
   )

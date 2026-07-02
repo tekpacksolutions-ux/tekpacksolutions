@@ -3,8 +3,43 @@
 import React from 'react'
 import PageHeaderSection from '@/app/sections/PageHeaderSection'
 import SectionDescription from '@/app/layouts/SectionDescription'
+import { FaInstagram, FaLinkedin, FaWhatsapp, FaYoutube } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
 
 export default function ContactForm() {
+  const socialLinks = [
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/abdul-rahman-s-58261138a',
+      icon: <FaLinkedin />,
+      color: 'hover:bg-[#0A66C2]',
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/tekpack4?igsh=MWhiczMxa3BsZGNkcA==',
+      icon: <FaInstagram />,
+      color: 'hover:bg-[#E4405F]',
+    },
+    {
+      name: 'YouTube',
+      url: 'https://youtube.com/@tekpackofficial?si=_OIK99q-T5DmLiuy',
+      icon: <FaYoutube />,
+      color: 'hover:bg-[#FF0000]',
+    },
+    {
+      name: 'X / Twitter',
+      url: 'https://x.com/tek_packk',
+      icon: <FaXTwitter />,
+      color: 'hover:bg-[#000000]',
+    },
+    {
+      name: 'WhatsApp',
+      url: 'https://wa.me/919150040034',
+      icon: <FaWhatsapp />,
+      color: 'hover:bg-[#25D366]',
+    },
+  ]
+
   const [formData, setFormData] = React.useState({
     name: '',
     email: '',
@@ -68,12 +103,24 @@ export default function ContactForm() {
     <PageHeaderSection className='h-auto min-h-[60vh]'>
       <div className={'grid grid-cols-1 gap-5 p-5 md:p-20 lg:grid-cols-2'}>
         <div className={'flex flex-col items-start justify-center gap-2 p-5'}>
-          <h1 className={'font-clash text-6xl font-semibold text-foreground'}>Get in Touch</h1>
+          <h1 className={'font-clash text-foreground text-6xl font-semibold uppercase'}>Get in Touch</h1>
           <SectionDescription>
             Our goal is to provide you with excellent customer service while meeting all of your packaging automation
             needs. We provide the peace of mind that comes from working with one manufacturer, one service department
             and one point of contact.
           </SectionDescription>
+
+          <div className='flex flex-wrap gap-3'>
+            {socialLinks.map((social) => (
+              <button
+                key={social.name}
+                onClick={() => window.open(social.url, '_blank')}
+                className={`flex items-center gap-2 rounded-lg border border-cyan-600/20 bg-white cursor-pointer px-8 py-4  font-semibold text-black transition-all hover:text-white ${social.color}`}>
+                <span className='text-lg'>{social.icon}</span>
+                {social.name}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div>

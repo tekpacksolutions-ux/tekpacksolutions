@@ -52,6 +52,9 @@ export const metadata: Metadata = {
     default: 'TEKPACK | Industrial Packaging Machine Manufacturer',
     template: '%s | TEKPACK',
   },
+  icons :{
+    icon : "/logo.png"
+  },
   description:
     'With over 15 years of expertise, TEKPACK manufactures high-efficiency, custom automatic packaging machines, servo systems, and filling machinery in Salem, Tamil Nadu.',
   metadataBase: new URL('https://www.tekpack.in'),
