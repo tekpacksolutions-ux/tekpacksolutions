@@ -30,17 +30,14 @@ export default async function MachinePage() {
   return (
     <PageLayout className={'relative gap-2 p-5'}>
       <PageHeaderSection>
-        <div className={'flex h-full max-w-5xl flex-col items-start justify-center gap-2 p-5 sm:p-20'}>
-          <h1 className={'font-clash text-foreground text-2xl font-semibold sm:text-6xl'}>
+        <div className={'flex h-full max-w-6xl flex-col items-start justify-center gap-2 p-5 sm:p-10'}>
+          <h1 className={'font-clash uppercase text-foreground text-2xl font-semibold sm:text-3xl text-balance'}>
             Industrial Packaging Machinery & Custom Automated Equipment
           </h1>
           <SectionDescription>
             Our diverse engineering range of robust packaging machinery spans high-performance bucket elevator systems,
             continuous band sealer machines, precise multihead filling machinery, high-speed Form-Fill-Seal (FFS)
-            platforms, and automated wrapping systems. Engineered for flexible packaging material substrates and
-            multi-head weigher integration, our line configurations are highly in-demand globally for features including
-            easy-to-operate PLC control configurations, rapid changeover mechanisms for varying pouch sizes, tight
-            gas-flushing seals for increased shelf life, and long-term production reliability.
+            platforms, and automated wrapping systems.
           </SectionDescription>
         </div>
       </PageHeaderSection>

@@ -4,6 +4,7 @@ import SectionDescription from '@/app/layouts/SectionDescription'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function ContactSection() {
   return (
@@ -16,14 +17,15 @@ export default function ContactSection() {
           </h2>
           <div>
             <SectionDescription>
-              Dont let manual inefficiencies or faulty seals bottleneck your factory floor output. Connect directly
-              with our Salem-based application engineers to map out your layout footprint, material densities, and
-              target operational speeds. Whether you need a standalone servo-driven auger system or a fully integrated
-              turnkey automatic packing machine line, TEKPACK delivers standard-setting hardware engineered to scale.
+              Dont let manual inefficiencies or faulty seals bottleneck your factory floor output. Connect directly with
+              our Salem-based application engineers to map out your layout footprint, material densities, and target
+              operational speeds.
             </SectionDescription>
           </div>
           <div className='mt-4'>
-            <Button>Request a Custom Quote</Button>
+            <Link href='/contact'>
+              <Button>Request a Custom Quote</Button>
+            </Link>
           </div>
         </article>
         <div
