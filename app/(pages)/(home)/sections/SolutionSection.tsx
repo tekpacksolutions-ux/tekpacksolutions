@@ -12,7 +12,6 @@ import Link from 'next/link'
 
 export default async function SolutionSection() {
   const data: HIGHLIGHTED_SOLUTIONS_QUERY_RESULT = await getHighlightedSolutions()
-  console.log(data)
   return (
     <section className={'flex w-full flex-col gap-2'}>
       <div className={'bg-background relative overflow-hidden rounded-md p-5 sm:p-20'}>

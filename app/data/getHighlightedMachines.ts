@@ -16,5 +16,11 @@ export const HIGHLIGHTED_MACHINES_QUERY = defineQuery(`
 `)
 
 export async function getHighlightedMachines() {
-  return await client.fetch(HIGHLIGHTED_MACHINES_QUERY)
+  return await client.fetch(
+    HIGHLIGHTED_MACHINES_QUERY,
+    {},
+    {
+      next: { revalidate: 60, tags: ['machines'] },
+    }
+  )
 }

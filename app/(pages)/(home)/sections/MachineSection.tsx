@@ -12,7 +12,6 @@ import Link from 'next/link'
 
 export default async function MachineSection() {
   const data: HIGHLIGHTED_MACHINES_QUERY_RESULT = await getHighlightedMachines()
-  console.log(data)
   return (
     <section className={'flex flex-col gap-2'}>
       <div className={'bg-background relative overflow-hidden rounded-md p-5 sm:p-20'}>

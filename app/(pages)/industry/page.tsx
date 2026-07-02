@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 
 export default async function Application() {
   const data: INDUSTRIES_QUERY_RESULT = await getIndustries()
-  console.log(data)
   return (
     <PageLayout className={'relative  p-5'}>
       <PageHeaderSection className={'relative flex flex-col items-center justify-center gap-2'}>

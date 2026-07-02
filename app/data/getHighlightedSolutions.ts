@@ -1,5 +1,6 @@
 import { client } from '@/sanity/lib/client'
 import { defineQuery } from 'groq'
+
 export const HIGHLIGHTED_SOLUTIONS_QUERY = defineQuery(`
   *[_type == "solution" && isHighlighted == true] | order(_updatedAt desc) {
     _id,
@@ -15,5 +16,11 @@ export const HIGHLIGHTED_SOLUTIONS_QUERY = defineQuery(`
 `)
 
 export async function getHighlightedSolutions() {
-  return await client.fetch(HIGHLIGHTED_SOLUTIONS_QUERY)
+  return await client.fetch(
+    HIGHLIGHTED_SOLUTIONS_QUERY,
+    {},
+    {
+      next: { revalidate: 60, tags: ['solutions'] },
+    }
+  )
 }
