@@ -13,7 +13,7 @@ export const companies: CompanyTestimonial[] = [
     companyName: 'AMMA',
     testimonial:
       'Integrating their continuous-duty filling systems completely redefined our bulk material handling throughput. The engineering precision handles our complex organic food flow characteristics seamlessly while preserving strict food safety tolerances.',
-    logo: '/image/logo/AMMA.jpeg',
+    logo: '/image/logo/AMMA.png',
     author: 'Liam Henderson',
     author_role: 'Director of Processing Operations',
   },
@@ -40,7 +40,7 @@ export const companies: CompanyTestimonial[] = [
     companyName: 'kpr',
     testimonial:
       'Handling highly abrasive material densities with precise grain-free product portions used to wear our systems down. This engineered feeding system safely automated our line limits while keeping clean hygiene standards.',
-    logo: '/image/logo/kpr.jpeg',
+    logo: '/image/logo/KPR.png',
     author: 'Sarah Jenkins',
     author_role: 'VP of Global Manufacturing Excellence',
   },
@@ -49,7 +49,7 @@ export const companies: CompanyTestimonial[] = [
     companyName: 'sellers',
     testimonial:
       'The high-speed horizontal flow wrapping integration was a massive technical upgrade for our facility. Upstream and downstream components communicate seamlessly, allowing us to hit maximum pillow-pack speeds safely.',
-    logo: '/image/logo/SELLERS.jpeg',
+    logo: '/image/logo/SELLERS.png',
     author: 'Arjun Mehta',
     author_role: 'Senior Systems Automation Lead',
   },
@@ -67,7 +67,7 @@ export const companies: CompanyTestimonial[] = [
     companyName: 'tamilachi',
     testimonial:
       'Maintaining zero line defects over high volume industrial productions used to be a major bottleneck. The multi-axis control setups deployed here keep our secondary casing and pallet containment perfectly synchronized.',
-    logo: '/image/logo/TAMILACHI.jpeg',
+    logo: '/image/logo/TAMILACHI.PNG',
     author: 'Elena Rostova',
     author_role: 'Operations Infrastructure Manager',
   },
