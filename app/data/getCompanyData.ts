@@ -67,7 +67,7 @@ export const companies: CompanyTestimonial[] = [
     companyName: 'tamilachi',
     testimonial:
       'Maintaining zero line defects over high volume industrial productions used to be a major bottleneck. The multi-axis control setups deployed here keep our secondary casing and pallet containment perfectly synchronized.',
-    logo: '/image/logo/TAMILACHI.PNG',
+    logo: '/image/logo/TAMILACHI.png',
     author: 'Elena Rostova',
     author_role: 'Operations Infrastructure Manager',
   },
