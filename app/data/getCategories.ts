@@ -14,6 +14,6 @@ export const CATEGORY_QUERY = defineQuery(`
 
 export async function getCategories() {
   return await client.fetch(CATEGORY_QUERY,{},{
-    next: { tags: ['categories'] },
+    next: { tags: ['categories'], revalidate: 0 },
   })
 }

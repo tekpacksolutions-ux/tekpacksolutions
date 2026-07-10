@@ -25,7 +25,11 @@ export const CATEGORY_BY_SLUG_QUERY = defineQuery(`
 `)
 
 export async function getCategoryBySlug(slug: string) {
-  return await client.fetch(CATEGORY_BY_SLUG_QUERY, { slug } , {
-    next: { tags: ['categories'] },
-  })
+  return await client.fetch(
+    CATEGORY_BY_SLUG_QUERY,
+    { slug },
+    {
+      next: { tags: ['categories'], revalidate: 0 },
+    }
+  )
 }

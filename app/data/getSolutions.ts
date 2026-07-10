@@ -1,5 +1,6 @@
 import { client } from '@/sanity/lib/client'
 import { defineQuery } from 'groq'
+
 export const SOLUTIONS_QUERY = defineQuery(`
   *[_type == "solution"] | order(name asc) {
     _id,
@@ -15,7 +16,11 @@ export const SOLUTIONS_QUERY = defineQuery(`
 `)
 
 export async function getSolutions() {
-  return await client.fetch(SOLUTIONS_QUERY,{},{
-    next: { tags: ['solutions'] },
-  })
+  return await client.fetch(
+    SOLUTIONS_QUERY,
+    {},
+    {
+      next: { tags: ['solutions'], revalidate: 0 },
+    }
+  )
 }

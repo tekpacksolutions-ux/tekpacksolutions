@@ -20,7 +20,7 @@ export async function getHighlightedSolutions() {
     HIGHLIGHTED_SOLUTIONS_QUERY,
     {},
     {
-      next: { tags: ['solutions'] },
+      next: { tags: ['solutions'], revalidate: 0 },
     }
   )
 }

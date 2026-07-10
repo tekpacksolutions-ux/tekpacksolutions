@@ -16,7 +16,11 @@ export const MACHINES_QUERY = defineQuery(`
 `)
 
 export async function getMachines() {
-  return await client.fetch(MACHINES_QUERY,{},{
-    next: { tags: ['machines'] },
-  })
+  return await client.fetch(
+    MACHINES_QUERY,
+    {},
+    {
+      next: { tags: ['machines'], revalidate: 0 },
+    }
+  )
 }

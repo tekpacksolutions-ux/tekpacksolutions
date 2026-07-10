@@ -45,7 +45,11 @@ export const MACHINE_BY_SLUG_QUERY = defineQuery(`
 `)
 
 export async function getMachineBySlug(slug: string) {
-  return await client.fetch(MACHINE_BY_SLUG_QUERY, { slug },{
-    next: { tags: ['machines'] },
-  })
+  return await client.fetch(
+    MACHINE_BY_SLUG_QUERY,
+    { slug },
+    {
+      next: { tags: ['machines'], revalidate: 0 },
+    }
+  )
 }

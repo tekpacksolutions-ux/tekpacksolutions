@@ -20,7 +20,7 @@ export async function getHighlightedMachines() {
     HIGHLIGHTED_MACHINES_QUERY,
     {},
     {
-      next: { tags: ['machines'] },
+      next: { tags: ['machines'], revalidate: 0 },
     }
   )
 }
